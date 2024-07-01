@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Quiénes Somos{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% for info in quienes_somos_info %}
+        <h2>{{ info.title }}</h2>
+        <p>{{ info.content }}</p>
+    {% endfor %}
+</div>
+{% endblock %}
